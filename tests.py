@@ -15,10 +15,8 @@ expected = r"""2013-03-12,A,1,100.0
     "\n"
 )
 
-
 if os.system("bash question.sh data.csv > output.csv") != 0:
     raise Exception
-
 
 with open("output.csv", "r", encoding="utf8") as f:
     lines = f.readlines()
